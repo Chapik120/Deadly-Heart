@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deadly Heart</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./favicons-89472505f820350056bffc579711b936(pr-cy.ru)/favicon.ico"/>
+</head>
+<body>
+  <!-- Навигация -->
+  <header class="site-header">
+    <div class="logo">
+        <a href="index.html">Deadly Heart</a>
+    </div>
+    <nav class="site-nav">
+      <a href="index.html" class="active">Главная</a>
+      <a href="about.html">О нас</a>
+      <a href="contact.html">Контакты</a>
+    </nav>
+    <div class="cart-icon" id="cartToggle">🛒 
+        <span id="cartCount">0</span>
+    </div>
+  </header>
+
+  <!-- Секция "Коллекции" -->
+  <section class="collections">
+    <h1>Наши коллекции</h1>
+    <div class="slider">
+      <div class="back">⫷</div>
+      <div class="photos">
+        <div class="side"><img src="photos/nb1.jpg" alt="Коллекция 1"></div>
+        <div class="central"><img src="photos/nb2.jpg" alt="Коллекция 2"></div>
+        <div class="side"><img src="photos/nb3.jpg" alt="Коллекция 3"></div>
+      </div>
+      <div class="next">⫸</div>
+    </div>
+  </section>
+
+  <!-- Секция "Товары" -->
+  <section class="products">
+    <h2>Популярные товары</h2>
+    <input type="search" id="search" placeholder="Поиск по товарам...">
+    <div class="product-grid" id="productGrid">
+      <!-- Карточки -->
+            <div class="product-card" data-name="Белая кофта Athletics">
+                <img src="photos/nb4.jpg" alt="Белая кофта Athletics">
+                <h3>Белая кофта Athletics</h3>
+                <p>2000₽</p>
+                <button class="add-to-cart">В корзину</button>
+            </div>
+            <div class="product-card" data-name="New Heart кроссовки Classic">
+                <img src="photos/nb1.jpg" alt="New Heart кроссовки Classic">
+                <h3>New Heart кроссовки Classic</h3>
+                <p>2500₽</p>
+                <button class="add-to-cart">В корзину</button>
+            </div>
+            <div class="product-card" data-name="Белая футболка Athletics">
+                <img src="photos/nb2.jpg" alt="Белая футболка Athletics">
+                <h3>Белая футболка Athletics</h3>
+                <p>1500₽</p>
+                <button class="add-to-cart">В корзину</button>
+            </div>
+            <div class="product-card" data-name="New Heart кроссовки Pale Frog">
+                <img src="photos/nb3.jpg" alt="New Heart кроссовки Pale Frog">
+                <h3>New Heart кроссовки Pale Frog</h3>
+                <p>3500₽</p>
+                <button class="add-to-cart">В корзину</button>
+            </div>
+            <div class="product-card" data-name="New Heart кроссовки Boots XB2">
+                <img src="photos/nb5.jpg" alt="New Heart кроссовки Boots XB2">
+                <h3>New Heart кроссовки Boots XB2</h3>
+                <p>5000₽</p>
+                <button class="add-to-cart">В корзину</button>
+            </div>
+            <div class="product-card" data-name="Белая флиска Athletics">
+                <img src="photos/nb6.jpg" alt="Белая флиска Athletics">
+                <h3>Белая флиска Athletics</h3>
+                <p>2500₽</p>
+                <button class="add-to-cart">В корзину</button>
+            </div>
+            <div class="product-card" data-name="New Heart кроссовки Lazy Snail">
+                <img src="photos/nb7.jpg" alt="New Heart кроссовки Lazy Snail">
+                <h3>New Heart кроссовки Lazy Snail</h3>
+                <p>2500₽</p>
+                <button class="add-to-cart">В корзину</button>
+            </div>
+            <div class="product-card" data-name="New Heart кроссовки Athletics">
+                <img src="photos/nb8.jpg" alt="New Heart кроссовки Athletics">
+                <h3>New Heart кроссовки Athletics</h3>
+                <p>2000₽</p>
+                <button class="add-to-cart">В корзину</button>
+            </div>
+            <div class="product-card" data-name="Белая зипка Athletics">
+                <img src="photos/nb9.jpg" alt="Белая зипка Athletics">
+                <h3>Белая зипка Athletics</h3>
+                <p>2500₽</p>
+                <button class="add-to-cart">В корзину</button>
+            </div>
+    </div>
+  </section>
+
+  <!-- Корзина -->
+  <aside class="cart-sidebar" id="cartSidebar">
+    <button class="close-cart" id="closeCart">×</button>
+    <h2>Ваша корзина</h2>
+    <ul id="cartItems"></ul>
+    <p id="cartTotal">Итого: 0₽</p>
+    <button id="checkoutBtn">Оформить заказ</button>
+  </aside>
+
+  <!-- Футер -->
+  <footer class="site-footer">
+    <p>&copy; 2025 Deadly Heart. Все права защищены.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

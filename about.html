@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О нас – Deadly Heart</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./favicons-89472505f820350056bffc579711b936(pr-cy.ru)/favicon.ico"/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+        <a href="index.html">Deadly Heart</a>
+    </div>
+    <nav class="site-nav">
+      <a href="index.html">Главная</a>
+      <a href="about.html" class="active">О нас</a>
+      <a href="contact.html">Контакты</a>
+    </nav>
+    <div class="cart-icon" id="cartToggle">🛒 
+        <span id="cartCount">0</span>
+    </div>
+  </header>
+
+  <section class="about">
+    <h1>О нас</h1>
+    <p>Deadly Heart – бренд одежды, посвященный минимализму и чистым линиям. Мы создаем вещи, в которых вам комфортно и стильно каждый день.</p>
+    <p>Наша миссия – сочетать качество, простоту и утонченную эстетику.</p>
+    <p>Основаны в 2025 году, мы быстро завоевали доверие благодаря безупречному крою и экологически чистым материалам.</p>
+  </section>
+
+  <!-- Корзина (общий блок) -->
+  <aside class="cart-sidebar" id="cartSidebar">
+    <button class="close-cart" id="closeCart">×</button>
+    <h2>Ваша корзина</h2>
+    <ul id="cartItems"></ul>
+    <p id="cartTotal">Итого: 0₽</p>
+    <button id="checkoutBtn">Оформить заказ</button>
+  </aside>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Deadly Heart. Все права защищены.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
